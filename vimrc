@@ -28,10 +28,6 @@ set spell spelllang=pl,en_us
 
 autocmd FileType netrw setl bufhidden=delete " or use :qa!
 nnoremap ,sh :-1read $HOME/.vim/sh<CR>1j
-nnoremap ,iopldif :-1read $HOME/.vim/iop.ldif<CR>
-nnoremap ,repldif :-1read $HOME/.vim/repoplfiolace.ldif<CR>
-nnoremap ,shelldif :-1read $HOME/.vim/shell.ldif<CR>
-nnoremap ,grpldif :-1read $HOME/.vim/group.ldif<CR>
 nnoremap ,perl :-1read $HOME/.vim/perl.pl<CR>6j
 nnoremap 8 :let @/ = ""<CR>
 
