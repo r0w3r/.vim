@@ -27,7 +27,9 @@ set ruler
 set spell spelllang=pl,en_us
 
 autocmd FileType netrw setl bufhidden=delete " or use :qa!
-nnoremap ,sh :-1read $HOME/.vim/sh<CR>1j
-nnoremap ,perl :-1read $HOME/.vim/perl.pl<CR>6j
-nnoremap 8 :let @/ = ""<CR>
+nnoremap ,sh :-1read $HOME/.vim/sh<CR>1j"read file and add to open file
+nnoremap ,perl :-1read $HOME/.vim/perl.pl<CR>6j"read file and add to open file
+nnoremap 8 :let @/ = ""<CR>"clean hilight from search
+
+
 
