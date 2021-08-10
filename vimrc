@@ -32,5 +32,8 @@ nnoremap ,sh :-1read $HOME/.vim/sh<CR>1j"read file and add to open file
 nnoremap ,perl :-1read $HOME/.vim/perl.pl<CR>6j"read file and add to open file
 nnoremap 8 :let @/ = ""<CR>"clean hilight from search
 
-
-
+"netrw
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 0
+let g:netrw_winsize = 20
