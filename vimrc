@@ -33,7 +33,7 @@ nnoremap ,perl :-1read $HOME/.vim/perl.pl<CR>6j"read file and add to open file
 nnoremap 8 :let @/ = ""<CR>"clean hilight from search
 
 "netrw
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
+let g:netrw_liststyle = 3 "tree style
+let g:netrw_browse_split = 4 "Browse in previous window
 let g:netrw_altv = 0
-let g:netrw_winsize = 20
+let g:netrw_winsize = 20 "Size of netrw window
