@@ -37,3 +37,4 @@ let g:netrw_liststyle = 3 "tree style
 let g:netrw_browse_split = 4 "Browse in previous window
 let g:netrw_altv = 0 "
 let g:netrw_winsize = 20 "Size of netrw window
+let g:netrw_keepdir = 0
