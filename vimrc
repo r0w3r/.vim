@@ -1,3 +1,4 @@
+"testowanie klucza
 syntax on
 set backspace=indent,eol,start
 set bg=dark
