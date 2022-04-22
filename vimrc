@@ -26,6 +26,7 @@ set scrolloff=5
 set signcolumn=yes
 set ruler
 set spelllang=pl,en_us
+set splitbelow
 
 autocmd FileType netrw setl bufhidden=delete " or use :qa!
 nnoremap ,sh :-1read $HOME/.vim/sh<CR>1j"read file and add to open file
