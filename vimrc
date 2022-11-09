@@ -29,9 +29,12 @@ set spelllang=pl,en_us
 set splitbelow
 
 autocmd FileType netrw setl bufhidden=delete " or use :qa!
-nnoremap ,sh :-1read $HOME/.vim/sh<CR>1j"read file and add to open file
-nnoremap ,perl :-1read $HOME/.vim/perl.pl<CR>6j"read file and add to open file
-nnoremap 8 :let @/ = ""<CR>"clean hilight from search
+"read file and add to open file
+nnoremap ,sh :-1read $HOME/.vim/sh<CR>1j
+"read file and add to open file
+nnoremap ,perl :-1read $HOME/.vim/perl.pl<CR>6j
+"clean hilight from search
+nnoremap 8 :let @/ = ""<CR> 
 "CTRL+J nowa linia, lamanie lini.
 nnoremap <NL> i<CR><ESC>
 
