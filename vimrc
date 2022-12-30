@@ -38,6 +38,15 @@ nnoremap 8 :let @/ = ""<CR>
 "CTRL+J nowa linia, lamanie lini.
 nnoremap <NL> i<CR><ESC>
 
+"automatic compliting
+inoremap ( ()<Esc>i
+inoremap { {}<Esc>i
+inoremap {<CR> {<CR>}<Esc>O
+inoremap [ []<Esc>i
+inoremap < <><Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
+
 "netrw
 let g:netrw_liststyle = 3 "tree style
 let g:netrw_browse_split = 4 "Browse in previous window
