@@ -28,7 +28,8 @@ set ruler
 set spelllang=pl,en_us
 set splitbelow
 
-autocmd FileType netrw setl bufhidden=delete " or use :qa!
+autocmd FileType netrw setl bufhidden=delete 
+" or use :qa!
 "read file and add to open file
 nnoremap ,sh :-1read $HOME/.vim/sh<CR>1j
 "read file and add to open file
@@ -49,9 +50,13 @@ inoremap < <><Esc>i
 inoremap ' ''<Esc>i
 inoremap " ""<Esc>i
 
-"netrw
-let g:netrw_liststyle = 3 "tree style
-let g:netrw_browse_split = 4 "Browse in previous window
+"netrw settings with comment
+let g:netrw_liststyle = 3 
+"tree style
+let g:netrw_browse_split = 4 
+"Browse in previous window
 let g:netrw_altv = 0 "
-let g:netrw_winsize = 20 "Size of netrw window
+let g:netrw_winsize = 20 
+"Size of netrw window
 let g:netrw_keepdir = 0
+"0 = browing dir = current dir
