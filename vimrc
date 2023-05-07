@@ -60,3 +60,8 @@ let g:netrw_winsize = 20
 "Size of netrw window
 let g:netrw_keepdir = 0
 "0 = browing dir = current dir
+
+"Plugins start
+call plug#begin()
+"Plugins end
+call plug#end()
