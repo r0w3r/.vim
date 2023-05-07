@@ -63,5 +63,6 @@ let g:netrw_keepdir = 0
 
 "Plugins start
 call plug#begin()
+"plugins
 "Plugins end
 call plug#end()
