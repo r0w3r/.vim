@@ -6,7 +6,7 @@ set number
 filetype indent plugin on
 set path+=**
 set wildmenu
-set history=600
+set history=1600
 set showcmd
 set showmode
 set rtp+=/usr/lib/python3.9/site-packages/powerline/bindings/vim/
@@ -64,5 +64,6 @@ let g:netrw_keepdir = 0
 "Plugins start
 call plug#begin()
 "plugins
+Plug 'prabirshrestha/vim-lsp'
 "Plugins end
 call plug#end()
