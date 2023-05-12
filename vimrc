@@ -28,8 +28,8 @@ set ruler
 set spelllang=pl,en_us
 set splitbelow
 
-autocmd FileType netrw setl bufhidden=delete 
 " or use :qa!
+autocmd FileType netrw setl bufhidden=delete 
 "read file and add to open file
 nnoremap ,sh :-1read $HOME/.vim/sh<CR>1j
 "read file and add to open file
