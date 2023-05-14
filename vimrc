@@ -27,9 +27,15 @@ set signcolumn=yes
 set ruler
 set spelllang=pl,en_us
 set splitbelow
+"Displeying tabs and trails
+set listchars=tab:>-,trail:.
+set list
+"highlight 81 col.
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
 
 " or use :qa!
-autocmd FileType netrw setl bufhidden=delete 
+autocmd FileType netrw setl bufhidden=delete
 "read file and add to open file
 nnoremap ,sh :-1read $HOME/.vim/sh<CR>1j
 "read file and add to open file
@@ -37,7 +43,7 @@ nnoremap ,perl :-1read $HOME/.vim/perl.pl<CR>6j
 "read file and add to open file
 nnoremap ,py :-1read $HOME/.vim/python.py<CR>2j
 "clean hilight from search
-nnoremap 8 :let @/ = ""<CR> 
+nnoremap 8 :let @/ = ""<CR>
 "CTRL+J nowa linia, lamanie lini.
 nnoremap <NL> i<CR><ESC>
 
