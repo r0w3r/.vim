@@ -2,3 +2,5 @@
 view/*
 plugged/*
 viminfo
+*.swp
+*/*.swp
