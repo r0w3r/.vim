@@ -28,7 +28,7 @@ set ruler
 set spelllang=pl,en_us
 set splitbelow
 "Displeying tabs and trails
-set listchars=tab:>-,trail:.
+exec "set listchars=tab:>-,trail:\uB7"
 set list
 "highlight 81 col.
 highlight ColorColumn ctermbg=magenta
