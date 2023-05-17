@@ -1,35 +1,58 @@
 syntax on
 set backspace=indent,eol,start
+filetype indent plugin on
+set hidden
+set noerrorbells
+set nowrap
+set scrolloff=5
+
+"new splits
+set splitbelow
+
+"Colors
 set bg=dark
+set t_Co=256
+
+"set lines number and relnumber
 set relativenumber
 set number
-filetype indent plugin on
+
+"Set fuzzy find like
 set path+=**
+
+"wildmeny and status line like
 set wildmenu
-set history=1600
 set showcmd
 set showmode
-set rtp+=/usr/lib/python3.9/site-packages/powerline/bindings/vim/
 set laststatus=2
-set t_Co=256
+set ruler
+
+"history size
+set history=1600
+
+"powerline
+set rtp+=/usr/lib/python3.9/site-packages/powerline/bindings/vim/
+
 set nocp
+
+"Tabs and indent
 set tabstop=2 softtabstop=2
 set shiftwidth=2
 set expandtab smartindent
 set autoindent
-set nohlsearch
-set hidden
-set noerrorbells
-set nowrap
-set incsearch
-set scrolloff=5
-set signcolumn=yes
-set ruler
-set spelllang=pl,en_us
-set splitbelow
+
 "Displeying tabs and trails
 exec "set listchars=tab:>-,trail:\uB7"
 set list
+
+"search
+set nohlsearch
+set incsearch
+
+"empty column left from line numbers.
+set signcolumn=yes
+set spelllang=pl,en_us
+
 "highlight 81 col.
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
@@ -62,10 +85,10 @@ let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4 
 "Browse in previous window
 let g:netrw_altv = 0 "
-let g:netrw_winsize = 20 
 "Size of netrw window
-let g:netrw_keepdir = 0
+let g:netrw_winsize = 20 
 "0 = browing dir = current dir
+let g:netrw_keepdir = 0
 
 "Plugins start
 call plug#begin()
