@@ -80,15 +80,18 @@ inoremap ' ''<Esc>i
 inoremap " ""<Esc>i
 
 "netrw settings with comment
-let g:netrw_liststyle = 3 
 "tree style
-let g:netrw_browse_split = 4 
+let g:netrw_liststyle = 3
 "Browse in previous window
-let g:netrw_altv = 0 "
+let g:netrw_browse_split = 4
+"to work properly open vim with +Vex
+let g:netrw_altv = 0
 "Size of netrw window
-let g:netrw_winsize = 20 
+let g:netrw_winsize = 20
 "0 = browing dir = current dir
 let g:netrw_keepdir = 0
+"Open previu in Vertical
+let g:netrw_preview = 1
 
 "Plugins start
 call plug#begin()
