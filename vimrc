@@ -93,9 +93,24 @@ let g:netrw_keepdir = 0
 "Open previu in Vertical
 let g:netrw_preview = 1
 
+"LSP
+let g:lsp_use_lua = has('nvim-0.4.0') || (has('lua') && has('patch-8.2.0775'))  "check for proper version of vim
+let g:lsp_use_native_client = 1                                                 "native client enabel
+let g:lsp_semantic_enabled = 0
+let g:lsp_format_sync_timeout = 1000
+let g:lsp_preview_float = 1                                                     "Opens preview windows as floating
+" Close Preview window with <C-c>
+autocmd User lsp_float_opened nmap <buffer> <silent> <C-c>
+  \<Plug(lsp-preview-close)>
+autocmd User lsp_float_closed nunmap <buffer> <C-c>
+"Highlight PopupWindow Ctermbg=lightblue guibg=lightblue                        "highlight popup window
+
+
+
 "Plugins start
 call plug#begin()
 "plugins
 Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
 "Plugins end
 call plug#end()
