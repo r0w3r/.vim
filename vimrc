@@ -6,6 +6,7 @@ set noerrorbells
 set nowrap
 set scrolloff=5
 set nocp
+set encoding=utf-8
 
 "new splits
 set splitbelow
