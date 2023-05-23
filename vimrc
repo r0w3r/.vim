@@ -31,7 +31,7 @@ set ruler
 set history=1600
 
 "powerline
-set rtp+=/usr/lib/python3.9/site-packages/powerline/bindings/vim/
+set rtp+=/usr/lib/python3.11/site-packages/powerline/bindings/vim/
 
 set nocp
 
