@@ -5,6 +5,7 @@ set hidden
 set noerrorbells
 set nowrap
 set scrolloff=5
+set nocp
 
 "new splits
 set splitbelow
@@ -33,7 +34,6 @@ set history=1600
 "powerline
 set rtp+=/usr/lib/python3.11/site-packages/powerline/bindings/vim/
 
-set nocp
 
 "Tabs and indent
 set tabstop=2 softtabstop=2
