@@ -106,7 +106,6 @@ autocmd User lsp_float_closed nunmap <buffer> <C-c>
 "Highlight PopupWindow Ctermbg=lightblue guibg=lightblue                        "highlight popup window
 
 
-
 "Plugins start
 call plug#begin()
 "plugins
