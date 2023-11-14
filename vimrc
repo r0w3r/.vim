@@ -109,6 +109,7 @@ autocmd User lsp_float_closed nunmap <buffer> <C-c>
 "Plugins start
 call plug#begin()
 "plugins
+Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'tpope/vim-fugitive'
