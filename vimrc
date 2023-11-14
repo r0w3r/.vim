@@ -116,3 +116,4 @@ autocmd User lsp_float_opened nmap <buffer> <silent> <C-c>
 autocmd User lsp_float_closed nunmap <buffer> <C-c>
 "Highlight PopupWindow Ctermbg=lightblue guibg=lightblue                        "highlight popup window
 
+
