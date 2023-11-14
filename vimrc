@@ -116,4 +116,3 @@ Plug 'tpope/vim-fugitive'
 Plug 'sjl/gundo.vim'
 "Plugins end
 call plug#end()
-
