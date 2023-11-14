@@ -93,6 +93,17 @@ let g:netrw_keepdir = 0
 "Open previu in Vertical
 let g:netrw_preview = 1
 
+"Plugins start
+call plug#begin()
+"plugins
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'tpope/vim-fugitive'
+Plug 'sjl/gundo.vim'
+"Plugins end
+call plug#end()
+
 "LSP
 let g:lsp_use_lua = has('nvim-0.4.0') || (has('lua') && has('patch-8.2.0775'))  "check for proper version of vim
 let g:lsp_use_native_client = 1                                                 "native client enabel
@@ -105,14 +116,3 @@ autocmd User lsp_float_opened nmap <buffer> <silent> <C-c>
 autocmd User lsp_float_closed nunmap <buffer> <C-c>
 "Highlight PopupWindow Ctermbg=lightblue guibg=lightblue                        "highlight popup window
 
-
-"Plugins start
-call plug#begin()
-"plugins
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
-Plug 'tpope/vim-fugitive'
-Plug 'sjl/gundo.vim'
-"Plugins end
-call plug#end()
