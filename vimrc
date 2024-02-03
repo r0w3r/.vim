@@ -34,7 +34,7 @@ set laststatus=2
 set ruler
 
 "history size
-set history=1600
+set history=2600
 
 "powerline
 set rtp+=/usr/lib/python3.11/site-packages/powerline/bindings/vim/
