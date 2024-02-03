@@ -13,7 +13,7 @@ set ignorecase
 set smartcase
 
 "new splits
-set splitbelow
+set splitbelow splitright
 
 "Colors
 set bg=dark
