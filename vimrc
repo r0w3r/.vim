@@ -8,6 +8,10 @@ set scrolloff=5
 set nocp
 set encoding=utf-8
 
+"ignore case sens
+set ignorecase
+set smartcase
+
 "new splits
 set splitbelow
 
