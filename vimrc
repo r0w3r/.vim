@@ -16,8 +16,13 @@ set smartcase
 set splitbelow splitright
 
 "Colors
+set termguicolors
 set bg=dark
 set t_Co=256
+"set cursorline
+"set cursorcolumn
+"highlight CursorLine ctermbg=darkBlue cterm=bold
+"highlight CursorColumn ctermbg=darkGreen cterm=bold
 
 "highlight 81 col.
 highlight ColorColumn ctermbg=magenta
