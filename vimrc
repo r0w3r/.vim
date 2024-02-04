@@ -19,6 +19,10 @@ set splitbelow splitright
 set bg=dark
 set t_Co=256
 
+"highlight 81 col.
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+
 "set lines number and relnumber
 set relativenumber
 set number
@@ -56,10 +60,6 @@ set incsearch
 "empty column left from line numbers.
 set signcolumn=yes
 set spelllang=pl,en_us
-
-"highlight 81 col.
-highlight ColorColumn ctermbg=magenta
-call matchadd('ColorColumn', '\%81v', 100)
 
 " or use :qa!
 autocmd FileType netrw setl bufhidden=delete
