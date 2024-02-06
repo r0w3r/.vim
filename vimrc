@@ -16,7 +16,7 @@ set smartcase
 set splitbelow splitright
 
 "Colors
-set termguicolors
+""set termguicolors
 set bg=dark
 set t_Co=256
 "set cursorline
