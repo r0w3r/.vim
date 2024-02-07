@@ -125,3 +125,12 @@ call plug#end()
 "autocmd User lsp_float_closed nunmap <buffer> <C-c>
 ""Highlight PopupWindow Ctermbg=lightblue guibg=lightblue                        "highlight popup window
 
+function! s:on_lsp_buffer_enabled() abort
+  setlocal omnifunc=lsp#complete
+endfunction
+
+augroup lsp_install
+  au!
+  autocmd User lsp_fuffer_enabled call s:lsp_buffer_enabled()
+augroup END
+
