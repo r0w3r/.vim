@@ -105,6 +105,7 @@ let g:netrw_preview = 1
 "Plugins start
 call plug#begin()
 "plugins
+Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
