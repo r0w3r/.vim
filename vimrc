@@ -79,14 +79,14 @@ nnoremap 8 :let @/ = ""<CR>
 "CTRL+J nowa linia, lamanie lini.
 nnoremap <NL> i<CR><ESC>
 
-"automatic compliting
-inoremap ( ()<Esc>i
-inoremap { {}<Esc>i
-inoremap {<CR> {<CR>}<Esc>O
-inoremap [ []<Esc>i
-inoremap < <><Esc>i
-inoremap ' ''<Esc>i
-inoremap " ""<Esc>i
+""automatic compliting
+"inoremap ( ()<Esc>i
+"inoremap { {}<Esc>i
+"inoremap {<CR> {<CR>}<Esc>O
+"inoremap [ []<Esc>i
+"inoremap < <><Esc>i
+"inoremap ' ''<Esc>i
+"inoremap " ""<Esc>i
 
 "netrw settings with comment
 "tree style
