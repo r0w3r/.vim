@@ -110,7 +110,7 @@ Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'tpope/vim-fugitive'
-Plug 'prabirshrestha/asyncomplete-lsp'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'sjl/gundo.vim'
 "Plugins end
 call plug#end()
