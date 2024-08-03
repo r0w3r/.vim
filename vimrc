@@ -110,25 +110,26 @@ Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'tpope/vim-fugitive'
+Plug 'prabirshrestha/asyncomplete-lsp'
 Plug 'sjl/gundo.vim'
 "Plugins end
 call plug#end()
 
 ""LSP
-"let g:lsp_use_lua = has('nvim-0.4.0') || (has('lua') && has('patch-8.2.0775'))  "check for proper version of vim
-"let g:lsp_use_native_client = 1                                                 "native client enabel
-"let g:lsp_semantic_enabled = 0
-"let g:lsp_format_sync_timeout = 1000
-"let g:lsp_preview_float = 1                                                     "Opens preview windows as floating
-"" Close Preview window with <C-c>
-"autocmd User lsp_float_opened nmap <buffer> <silent> <C-c>
-"  \<Plug(lsp-preview-close)>
-"autocmd User lsp_float_closed nunmap <buffer> <C-c>
-""Highlight PopupWindow Ctermbg=lightblue guibg=lightblue                        "highlight popup window
+let g:lsp_use_lua = has('nvim-0.4.0') || (has('lua') && has('patch-8.2.0775'))  "check for proper version of vim
+let g:lsp_use_native_client = 1                                                 "native client enabel
+let g:lsp_semantic_enabled = 0
+let g:lsp_format_sync_timeout = 1000
+let g:lsp_preview_float = 1                                                     "Opens preview windows as floating
+" Close Preview window with <C-c>
+autocmd User lsp_float_opened nmap <buffer> <silent> <C-c>
+  \<Plug(lsp-preview-close)>
+autocmd User lsp_float_closed nunmap <buffer> <C-c>
+"Highlight PopupWindow Ctermbg=lightblue guibg=lightblue                        "highlight popup window
 
-"function! s:on_lsp_buffer_enabled() abort
-"  setlocal omnifunc=lsp#complete
-"endfunction
+function! s:on_lsp_buffer_enabled() abort
+  setlocal omnifunc=lsp#complete
+endfunction
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
     setlocal signcolumn=yes
