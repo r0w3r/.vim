@@ -116,21 +116,6 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 call plug#end()
 
 "LSP
-let g:lsp_use_lua = has('nvim-0.4.0') || (has('lua') && has('patch-8.2.0775'))  "check for proper version of vim
-let g:lsp_use_native_client = 1                                                 "native client enabel
-let g:lsp_semantic_enabled = 0
-let g:lsp_format_sync_timeout = 1000
-let g:lsp_preview_float = 1                                                     "Opens preview windows as floating
-" Close Preview window with <C-c>
-autocmd User lsp_float_opened nmap <buffer> <silent> <C-c>
-  \<Plug(lsp-preview-close)>
-autocmd User lsp_float_closed nunmap <buffer> <C-c>
-"Highlight PopupWindow Ctermbg=lightblue guibg=lightblue                        "highlight popup window
-
-"LSP log
-let g:lsp_log_verbose = 1
-let g:lsp_log_file = expand('~/tmp/vim-lsp.log')
-
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
     setlocal signcolumn=yes
@@ -148,7 +133,7 @@ function! s:on_lsp_buffer_enabled() abort
 "    nnoremap <buffer> <expr><c-f> lsp#scroll(+4)
 "    nnoremap <buffer> <expr><c-d> lsp#scroll(-4)
 
-    let g:lsp_format_sync_timeout = 1000
+" performance
     autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
     
     " refer to doc to add more commands
@@ -160,3 +145,6 @@ augroup lsp_install
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 
+""LSP log
+"let g:lsp_log_verbose = 1
+"let g:lsp_log_file = expand('~/tmp/vim-lsp.log')
