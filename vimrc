@@ -127,6 +127,10 @@ autocmd User lsp_float_opened nmap <buffer> <silent> <C-c>
 autocmd User lsp_float_closed nunmap <buffer> <C-c>
 "Highlight PopupWindow Ctermbg=lightblue guibg=lightblue                        "highlight popup window
 
+"LSP log
+let g:lsp_log_verbose = 1
+let g:lsp_log_file = expand('~/tmp/vim-lsp.log')
+
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
     setlocal signcolumn=yes
@@ -155,10 +159,4 @@ augroup lsp_install
     " call s:on_lsp_buffer_enabled only for languages that has the server registered.
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
-let g:lsp_settings_filetype_perl = 'slp'
-let g:lsp_settings = {
-\  'perl-languageserver': {
-\    'disabled' : 1,
-\  }
-\}
 
