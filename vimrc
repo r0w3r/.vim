@@ -155,4 +155,10 @@ augroup lsp_install
     " call s:on_lsp_buffer_enabled only for languages that has the server registered.
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
+let g:lsp_settings_filetype_perl = 'slp'
+let g:lsp_settings = {
+\  'perl-languageserver': {
+\    'disabled' : 1,
+\  }
+\}
 
