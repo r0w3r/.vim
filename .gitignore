@@ -4,3 +4,4 @@ plugged/*
 viminfo
 *.swp
 */*.swp
+.vscode
