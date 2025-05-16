@@ -134,7 +134,7 @@ function! s:on_lsp_buffer_enabled() abort
 "    nnoremap <buffer> <expr><c-d> lsp#scroll(-4)
 
 " performance
-    autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
+    autocmd! BufWritePre *.rs,*.go,*.pl,*.vim,*.md call execute('LspDocumentFormatSync')
     
     " refer to doc to add more commands
 endfunction
