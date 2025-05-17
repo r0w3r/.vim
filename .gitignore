@@ -4,3 +4,4 @@ plugged/*
 viminfo
 *.swp
 */*.swp
+system.tags

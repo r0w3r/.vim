@@ -48,6 +48,10 @@ set history=2600
 "powerline
 set rtp+=/usr/lib/python3.11/site-packages/powerline/bindings/vim/
 
+"Omni Completion ctags need more tests
+"set omnifunc=ccomplete#Complete
+"set tags= ~/.vim/system.tag,tags
+
 "Tabs and indent
 set tabstop=2 softtabstop=2
 set shiftwidth=2
