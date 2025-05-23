@@ -1,11 +1,11 @@
 syntax on
+set nocp
 set backspace=indent,eol,start
 filetype indent plugin on
 set hidden
 set noerrorbells
 set nowrap
 set scrolloff=5
-set nocp
 set encoding=utf-8
 
 "ignore case sens
