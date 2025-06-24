@@ -78,8 +78,8 @@ nnoremap ,sh :-1read $HOME/.vim/sh<CR>1j
 nnoremap ,perl :-1read $HOME/.vim/perl.pl<CR>6j
 "read file and add to open file
 nnoremap ,py :-1read $HOME/.vim/python.py<CR>2j
-"clean hilight from search
-nnoremap 8 :let @/ = ""<CR>
+""clean hilight from search
+"nnoremap C-8 :let @/ = ""<CR>
 "CTRL+J nowa linia, lamanie lini.
 nnoremap <NL> i<CR><ESC>
 
